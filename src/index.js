@@ -14,7 +14,7 @@ searchButton.addEventListener("click", () => {
 
 weatherData = async (searchInput) => {
   try {
-    const URL = `http://api.weatherapi.com/v1/current.json?key=3dfb4ae196e94cab8b4153933231408&q=${searchInput}`;
+    const URL = `https://api.weatherapi.com/v1/current.json?key=3dfb4ae196e94cab8b4153933231408&q=${searchInput}`;
     const response = await fetch(URL);
     const data = await response.json();
 
